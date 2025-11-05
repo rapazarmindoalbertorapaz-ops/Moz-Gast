@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Gastronomia Moçambicana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gastronomia Moçambicana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu Principal</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="membros.html">Nossos Membros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-reserva">
+            <h2>Faça a Sua Reserva</h2>
+            <p>Garanta seu lugar para desfrutar dos nossos sabores!</p>
+            
+            <form action="processa_reserva.php" method="POST"> 
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="pessoas">Número de Pessoas:</label>
+                <input type="number" id="pessoas" name="pessoas" min="1" required>
+
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
